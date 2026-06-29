@@ -1,6 +1,10 @@
-# NotiPay
+<p align="center">
+  <img src="branding/Logo_NotiPay.png" alt="NotiPay" width="160" height="160">
+</p>
 
-**[Español](#español) · [English](#english)**
+<h1 align="center">NotiPay</h1>
+
+<p align="center"><strong><a href="#español">Español</a> · <a href="#english">English</a></strong></p>
 
 Hands-free, spoken confirmation of incoming Yape payments — for any vendor who
 wants instant payment confirmation without watching the screen.
