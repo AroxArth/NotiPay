@@ -1,0 +1,26 @@
+# Android / Gradle
+*.iml
+.gradle
+/.idea
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+.kotlin
+
+# Local config (machine-specific)
+/local.properties
+local.properties
+
+# Release signing — NEVER commit these
+keystore.properties
+*.jks
+*.keystore
+
+# Tooling
+.atl
+
+# Stray asset (unused; real icon lives in res/)
+/gitlogo.png
