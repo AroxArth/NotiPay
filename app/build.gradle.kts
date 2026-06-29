@@ -54,6 +54,17 @@ android {
         }
     }
 
+    // Name the output APK after the app + version, e.g. NotiPay-v1.0.apk
+    // (debug builds get a -debug suffix so they don't clash with release).
+    applicationVariants.all {
+        val variant = this
+        outputs.all {
+            val output = this as com.android.build.gradle.internal.api.BaseVariantOutputImpl
+            val suffix = if (variant.buildType.name == "release") "" else "-${variant.buildType.name}"
+            output.outputFileName = "NotiPay-v${variant.versionName}$suffix.apk"
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
